@@ -270,6 +270,10 @@ footer {
     opacity: 0.6;
 }
 
+footer p {
+    margin-top: 50px;
+}
+
 /* Responsive ============= */
 @media (min-width: 800px) {
     html {
