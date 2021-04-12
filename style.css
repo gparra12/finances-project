@@ -20,6 +20,7 @@ html {
 body {
     background: #e1e1f4;
     font-family: 'Poppins', sans-serif;
+    color: var(--dark-blue);
 }
 
 .sr-only {
@@ -66,6 +67,7 @@ button {
     padding: 0;
     border-radius: 0.25rem;
     cursor: pointer;
+    font-weight: 400;
 }
 
 button:hover {
@@ -79,13 +81,14 @@ button:hover {
 
 .button.cancel {
     color: var(--red);
-    border: 2px var(--red) solid;
+    border: 1.5px var(--red) solid;
     border-radius: 0.25rem;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0.6;
+    font-weight: 600;
 }
 
 .button.cancel:hover {
@@ -117,7 +120,7 @@ header {
 
 /* Cards ============= */
 .card {
-    background: white;
+    background: #f4f2f4;
     padding: 1.5rem;
     border-radius: 0.25rem;
     margin-bottom: 2rem;
@@ -140,7 +143,7 @@ header {
 
 .card.total {
     background: #30A804;
-    color: #fff
+    color: #f4f2f4
 }
 
 /* Table ============= */
@@ -152,8 +155,8 @@ header {
 
 #dataTable {
     width: 100%;
-    border-spacing: 0 0.5rem;
-    color: #969cb3;
+    border-spacing: 0 0.4rem;
+    color: var(--dark-blue);
 }
 
 table thead tr th:first-child, 
@@ -167,9 +170,10 @@ table tbody tr td:last-child {
 }
 
 table thead th {
-    background: #fff;
-    font-weight: normal;
-    padding: 1rem 2rem;
+    background: #f4f2f4;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0.8rem 2rem;
     text-align: left;;
 }
 
@@ -182,8 +186,10 @@ table tbody tr:hover {
 }
 
 table tbody td {
-    background: #fff;
-    padding: 1rem 2rem;
+    background: #f4f2f4;
+    padding: 0.4rem 2.2rem 0.4rem 2.2rem;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 td.description {
@@ -219,10 +225,15 @@ td.expense {
 }
 
 .modal {
-    background: #f0f2f5;
+    background: #e1e1f4;
     padding: 2.4rem;
     position: relative;
     z-index: 1;
+    border-radius: 0.25rem;
+}
+
+.modal h2 {
+    font-weight: 600;
 }
 
 /* Form ============= */
@@ -238,9 +249,10 @@ td.expense {
 
 input {
     border: none;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     padding: 0.8rem;
     width: 100%;
+    height: 40px;
 }
 
 .input-group {
